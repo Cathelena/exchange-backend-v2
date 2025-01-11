@@ -1,0 +1,13 @@
+{
+  "name": "currency-exchange-backend",
+  "version": "1.0.0",
+  "description": "A simple backend to handle currency exchange logs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}

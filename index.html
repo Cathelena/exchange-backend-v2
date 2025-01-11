@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Exchange</h1>
+
+        <!-- Currency Inputs -->
+        <label for="currentRate">Enter Current Rate (MDL to INR):</label>
+        <input type="number" id="currentRate" value="4.65" step="0.01">
+
+        <label for="amountMDL">Enter the amount in MDL:</label>
+        <input type="number" id="amountMDL" value="1000" step="1">
+
+        <label for="buyRate">Enter Buy Rate:</label>
+        <input type="number" id="buyRate" value="4.7" step="0.01">
+
+        <label for="sellRate">Enter Sell Rate:</label>
+        <input type="number" id="sellRate" value="4.9" step="0.01">
+
+        <!-- Date and Time Inputs -->
+        <label for="day">Enter Day:</label>
+        <input type="number" id="day" value="01" min="1" max="31">
+
+        <label for="month">Enter Month:</label>
+        <input type="number" id="month" value="09" min="1" max="12">
+
+        <label for="year">Enter Year:</label>
+        <input type="number" id="year" value="2025" min="2000" max="2100">
+
+        <label for="time">Enter Time (HH:MM):</label>
+        <input type="time" id="time" value="16:13">
+
+        <button onclick="calculate()">Calculate</button>
+
+        <!-- Result Displays -->
+        <p id="inrCurrentRate">INR Value (Current Rate): Loading...</p>
+        <p id="inrBuyRate">INR Value (Buy Rate): Loading...</p>
+        <p id="inrSellRate">INR Value (Sell Rate): Loading...</p>
+        <p id="differenceBuySell">Difference (Buy Rate vs Sell Rate): Loading...</p>
+
+        <!-- Exchange Logs -->
+        <h2>Exchange Logs</h2>
+        <ul id="exchangeLogs"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
